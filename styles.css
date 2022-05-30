@@ -13,8 +13,9 @@ body {
     color: #ffffff;
     border-radius: 30px;
     border: 0;
-    padding: 10px;
-    height: 40px;
+    padding: 5px;
+    margin: 12px;
+    height: 38px;
     width: 90px;
     font-weight: bold;
     font-size: 1rem;
@@ -45,20 +46,20 @@ body {
       box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: 1fr 6fr repeat(2, 1fr) 2fr;
       grid-template-rows: 1fr 1fr;
-      gap: 10px;
-      place-items: center;
+      gap: 5px;
+      align-items: center;
   }
 
   #search {
     transform: scale(1.1);
+    justify-self: end;
   }
 
   #notif {
     transform: scale(1.2);
-    justify-self: center;
-    padding: 1rem;
+    justify-self: right;
     font-variation-settings:
     'FILL' 000,
     'wght' 400,
@@ -69,16 +70,27 @@ body {
   #acct {
     transform: scale(1.5);
     justify-self: center;
-    padding: 1rem;
   }
 
   .name {
     justify-self: start;
-    padding-right: 4rem;
   }
+
 
   #profile-pic {
     transform: scale(2.2);
+    justify-self: end;
+  }
+
+  .hi-there {
+    font-size: .8rem;
+    line-height: 6px;
+    padding: 1.2em;
+    padding-left: 1.5em;
+  }
+
+  .full-name {
+    font-size: 1.2rem;
   }
 
   .sidebar {
