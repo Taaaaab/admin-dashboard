@@ -4,6 +4,7 @@ body {
     background-color: hsl(0, 0%, 98%);
     color: #333;
     font: 100% / normal sans-serif;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
   }
 
@@ -12,9 +13,11 @@ body {
     color: #ffffff;
     border-radius: 30px;
     border: 0;
-    height: 2rem;
-    width: 4rem;
+    padding: 10px;
+    height: 40px;
+    width: 90px;
     font-weight: bold;
+    font-size: 1rem;
   }
 
   input {
@@ -22,7 +25,8 @@ body {
       border-radius: 30px;
       border: 0;
       height: 1.8rem;
-      width: 100%;
+      width: 90%;
+      justify-self: start;
   }
 
   .container {
@@ -37,22 +41,24 @@ body {
     
       color: #000000;
       background-color: #ffffff;
-      padding: 1rem;
       z-index: 100;
       box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 
       display: grid;
-      grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
       place-items: center;
   }
 
   #search {
-    transform: scale(1);
+    transform: scale(1.1);
   }
 
   #notif {
-    transform: scale(1);
+    transform: scale(1.2);
+    justify-self: center;
+    padding: 1rem;
     font-variation-settings:
     'FILL' 000,
     'wght' 400,
@@ -60,18 +66,21 @@ body {
     'opsz' 48
   }
 
-  #profile-pic {
-    transform: scale(2);
+  #acct {
+    transform: scale(1.5);
+    justify-self: center;
+    padding: 1rem;
   }
 
-  .welcome {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 1rem;
-      width: 100%;
-      place-items: center;
+  .name {
+    justify-self: start;
+    padding-right: 4rem;
   }
-  
+
+  #profile-pic {
+    transform: scale(2.2);
+  }
+
   .sidebar {
       grid-column: 1 / 2;
       grid-row: 1 / 4;
@@ -84,8 +93,7 @@ body {
   .side-grid {
       display: grid;
       row-gap: 1rem;
-      
-      grid-template-columns: 50px 50px;
+      grid-template-columns: 45px 40px;
       padding: 2rem;
   }
 
