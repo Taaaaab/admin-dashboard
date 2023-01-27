@@ -82,17 +82,9 @@ body {
     margin-right: 3em;
   }
 
-
-  #profile-pic {
-    transform: scale(2.1);
-    justify-self: end;
-  }
-
   .hi-there {
     font-size: .8rem;
     line-height: 6px;
-    padding: 1.2em;
-    padding-left: 1.5em;
   }
 
   .full-name {
@@ -128,9 +120,16 @@ body {
     align-self: start;
 }
 
-span {
-    transform: scale(0.9);
-    align-self: center;
+.profile-pic {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.profile-pic-small {
+  max-width: 50px;
+  align-self: center;
+  justify-self: end;
 }
 
 .home,
